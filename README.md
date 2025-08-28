@@ -27,21 +27,6 @@ Python 3.9+ recommended.
 pip install -r requirements.txt
 ```
 
-### 3) Run examples
-```bash
-# MARKET BUY 0.001 BTCUSDT
-python -m src.cli --api-key YOUR_KEY --api-secret YOUR_SECRET --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
-
-# LIMIT SELL 0.001 BTCUSDT @ 75000, GTC
-python -m src.cli --api-key YOUR_KEY --api-secret YOUR_SECRET --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 75000 --tif GTC
-
-# STOP-LIMIT BUY 0.001 when stop hits 72000, limit 72100
-python -m src.cli --api-key YOUR_KEY --api-secret YOUR_SECRET --symbol BTCUSDT --side BUY --type STOP_LIMIT --quantity 0.001 --stop-price 72000 --price 72100
-
-# TWAP: BUY total 0.01 split into 5 slices every 10s
-python -m src.cli --api-key YOUR_KEY --api-secret YOUR_SECRET --symbol BTCUSDT --side BUY --type TWAP --quantity 0.01 --slices 5 --interval 10
-```
-
 > All API interactions are routed to `https://testnet.binancefuture.com` when `--testnet` is set (default).
 
 ## Files
