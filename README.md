@@ -44,7 +44,6 @@ pip install -r requirements.txt
 ```
 
 ## Logging
-- Logs go to `bot.log` and console.
 - Every request/response and error is recorded with timestamps.
 
 ## Notes & Gotchas
@@ -61,10 +60,6 @@ pip install -r requirements.txt
 - **Never** commit your API keys.
 - Prefer environment variables or a secure secret manager when running in CI/servers.
 
-## License
-MIT
-
-
 ## Streamlit UI
 
 A minimal UI is included at `app.py`.
@@ -79,3 +74,8 @@ streamlit run app.py
 Enter your **Binance Testnet** API key/secret in the sidebar, choose a symbol (e.g., `BTCUSDT`), pick an order type (MARKET/LIMIT/STOP_LIMIT or TWAP), then click **Start**.
 
 > ⚠️ This UI is for **educational/testnet** use. Double‑check credentials and symbols.
+
+
+
+## License
+MIT
